@@ -1,0 +1,56 @@
+@import "../../App.scss";
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    h1{
+        font-size: 120px;
+        opacity: 0.9;
+        @include mobile{
+            font-size: 64px;
+        }
+    }
+    .mountains{
+        background: url('../../../public/mountains.png');
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        @include mobile{
+            background-size: contain;
+            background-repeat:no-repeat;
+        }
+    }
+    .stars{
+        background: url('../../../public/stars.png');
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+    .planets{
+        background: url('../../../public/planets.png');
+        background-position: bottom;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        @include mobile{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
+.Wedo{
+    background: linear-gradient(rgb(17, 17, 50), rgb(12, 12, 29));
+}
+.Wedid{
+    background: linear-gradient(180deg, #111132, #505064);
+}
