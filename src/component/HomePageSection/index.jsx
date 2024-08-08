@@ -53,13 +53,16 @@ export const HomePageSection = () => {
                 stiffness: 150,
                 damping: 50,
               }}
+              href="#Contact"
             >
               Contact me
             </motion.a>
           </motion.div>
         </div>
         <div className={style.right}>
-          <img src="/portrait.png" alt="" />
+          <div className={style.imageBox}>
+            <img src="/myportrait.png" alt="" />
+          </div>
         </div>
         {/*eslint-disable-next-line */}
         <marquee scrollamount="25">

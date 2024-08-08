@@ -85,20 +85,27 @@
 .right{
     flex:1;
     display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
+    justify-content: center;
     @include mobile{
         flex:2;
+        overflow: visible;
     }
+    &>.imageBox{
+        width: 400px;
+        height: 400px;
+        border-radius: 100%;
+        background:linear-gradient(180deg, rgba(0,0,0,0.1), rgba(0,0,0,0.2),rgba(0,0,0,0.3));
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
     &>img{
-        transform: translateY(150px);
+        width: 80%;
+        object-fit: contain;
         @include mobile{
-            // object-fit: cover;
-            width: 100%;
-            height: 100%;
-            transform: translateY(-50px);
-            object-fit: cover;
+            object-fit: contain;
         }
     }
+}
 }
